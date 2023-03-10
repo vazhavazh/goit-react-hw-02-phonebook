@@ -1,19 +1,22 @@
+import { Li, Ul, Span, DeleteButton } from './ContactListStyled';
+
+
 export const ContactList = ({ contacts, onClick }) => {
   return (
-    <ul>
+    <Ul>
       {contacts.map(contact => (
-        <li key={contact.id}>
-          {contact.name} {contact.number}
-          <button
+        <Li key={contact.id}>
+         <Span> {contact.name} {contact.number}</Span>
+          <DeleteButton
             type="button"
             onClick={() => {
               onClick(contact.id);
             }}
           >
             Delete
-          </button>
-        </li>
+          </DeleteButton>
+        </Li>
       ))}
-    </ul>
+    </Ul>
   );
 };
