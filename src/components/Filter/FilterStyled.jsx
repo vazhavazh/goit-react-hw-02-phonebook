@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Label = styled.label`
   font-size: 22px;
- margin-right: 22px;
+  margin-right: 22px;
 `;
 
 export const Input = styled.input`
@@ -22,5 +22,3 @@ export const Input = styled.input`
     cursor: pointer;
   }
 `;
-
-

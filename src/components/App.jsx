@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
-
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 
 import { AppStyled, H1, H2 } from './AppStyled';
-
-
 
 export class App extends Component {
   state = {
